@@ -1,0 +1,26 @@
+[package]
+name = "turnkey_api"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+async-trait = "0.1.88"
+chrono = { version = "0.4", features = ["serde"] }
+progenitor = "0.9.1"
+reqwest = { version = "0.12.15", features = ["json", "stream"] }
+schemars = { version = "0.8.22", features = ["uuid1"] }
+serde = { version = "1.0", features = ["derive"] }
+uuid = { version = "1.16.0", features = ["serde", "v4"] }
+
+base64 = { version = "0.22.1", default-features = false, features = ["std"] }
+hex = { version = "0.4.3", default-features = false, features = ["std"] }
+p256 = { version = "0.13.2", default-features = false, features = ["ecdsa"] }
+serde_json = { version = "1.0.140", default-features = false, features = ["std"] }
+thiserror = { version = "2.0.12", default-features = false }
+
+doc-comment = "0.3.3"
+
+[dev-dependencies]
+
+# Used by example
+tokio = { version = "1.44.1", features = ["full"] }
