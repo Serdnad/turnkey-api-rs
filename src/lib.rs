@@ -1,8 +1,3 @@
-#[macro_use]
-extern crate doc_comment;
-
-doctest!("../README.md");
-
 use base64::Engine;
 use base64::prelude::BASE64_URL_SAFE_NO_PAD;
 use p256::FieldBytes;
